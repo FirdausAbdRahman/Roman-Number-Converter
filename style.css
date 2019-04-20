@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Quattrocento:400,700);
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Quattrocento", sans-serif;
+  font-weight: bold;
+  background: url(background.jpg);
+}
+
+.container{
+  margin: 10px;
+  padding: 15px;
+  position: absolute;
+  top: 45%;
+  left: 49.3%;
+  width: 365px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  background: burlywood;
+  text-align: center;
+  border: 5px solid chocolate;
+  border-style: outset;
+  box-shadow: 5px 10px grey;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 20%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.result{
+  position: absolute;
+  top: 70%;
+  right: 78%;
+}
+
+span{
+ position: relative;
+ top: 20px;
+}
+
+#answer{
+  position: relative;
+  top: 50px;
+}
