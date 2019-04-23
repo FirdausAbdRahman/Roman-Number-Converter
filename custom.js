@@ -1,5 +1,3 @@
-let convertButton = document.getElementById("convert");
-
 function convertToRoman(num) {
   'use strict';
 
@@ -23,23 +21,51 @@ function convertToRoman(num) {
   return romanized;
 }
 
+// FEATURE OPTION 1: PRESS 'convert' BUTTON TO CONVERT
+let convertButton = document.getElementById("convert");
+
 convertButton.addEventListener("click", function(){
   'use strict';
 
   let value = document.getElementById("input").value;
+  value = parseInt(value);
   let answer = document.getElementById("answer");
 
   if(convertToRoman(value)){
      answer.innerHTML= "Result: " + convertToRoman(value);
   }else if(convertToRoman(value === "")){
     answer.innerHTML = "Please enter the number";
-  }else if(convertToRoman(value === "0")){
+  }else if(convertToRoman(value === 0)){
     answer.innerHTML ="Romans have no concept of zero.";
-  }else if(convertToRoman(value < "0")){
+  }else if(convertToRoman(value < 0)){
     answer.innerHTML = "This doesn\'t work for negative numbers.";
   }
   else{
     answer.innerHTML="Sorry, this simple app can only convert number to roman, not the other way around.";
   }
 
-})
+}) 
+
+/*
+// FEATURE OPTION 2: AUTOMATICALLY CONVERT THE NUMBER
+let input = document.getElementById("input");
+input.addEventListener("keyup", convertInput);
+
+function convertInput(){
+
+  let value = document.getElementById("input").value;
+  value = parseInt(value);
+  let answer = document.getElementById("answer");
+
+  if(convertToRoman(value)){
+     answer.innerHTML= "Result: " + convertToRoman(value);
+  }else if(value === 0){
+    answer.innerHTML ="Romans have no concept of zero.";
+  }else if(convertToRoman(value < 0)){
+    answer.innerHTML = "This doesn\'t work for negative numbers.";
+  }
+  else{
+    answer.innerHTML="Please enter the number";
+  }
+
+}*/
