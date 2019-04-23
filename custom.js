@@ -44,7 +44,7 @@ convertButton.addEventListener("click", function(){
     answer.innerHTML="Sorry, this simple app can only convert number to roman, not the other way around.";
   }
 
-}) 
+})
 
 /*
 // FEATURE OPTION 2: AUTOMATICALLY CONVERT THE NUMBER
@@ -52,6 +52,7 @@ let input = document.getElementById("input");
 input.addEventListener("keyup", convertInput);
 
 function convertInput(){
+'use strict';
 
   let value = document.getElementById("input").value;
   value = parseInt(value);
