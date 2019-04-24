@@ -21,6 +21,7 @@ function convertToRoman(num) {
   return romanized;
 }
 
+/*
 // FEATURE OPTION 1: PRESS 'convert' BUTTON TO CONVERT
 let convertButton = document.getElementById("convert");
 
@@ -44,10 +45,12 @@ convertButton.addEventListener("click", function(){
     answer.innerHTML="Sorry, this simple app can only convert number to roman, not the other way around.";
   }
 
-})
+})  */
 
-/*
+
 // FEATURE OPTION 2: AUTOMATICALLY CONVERT THE NUMBER
+document.getElementById("convert").remove();
+
 let input = document.getElementById("input");
 input.addEventListener("keyup", convertInput);
 
@@ -69,4 +72,7 @@ function convertInput(){
     answer.innerHTML="Please enter the number";
   }
 
-}*/
+
+
+
+}
