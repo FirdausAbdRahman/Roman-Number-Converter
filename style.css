@@ -15,7 +15,7 @@ body{
   top: 45%;
   left: 49.3%;
   width: 365px;
-  height: 200px;
+  height: 250px;
   transform: translate(-50%, -50%);
   background: burlywood;
   text-align: center;
@@ -34,18 +34,31 @@ h1{
   color: black;
 }
 
-.result{
-  position: absolute;
-  top: 70%;
-  right: 78%;
+.span1{
+ position: relative;
+ top: 5px;
 }
 
-span{
- position: relative;
- top: 20px;
+.p2{
+  position: absolute;
+  top: 140px;
+  right: 13px;
+}
+
+.span2{
+  position: absolute;
+  top: 200px;
+  left: 75px;
+  display:flex;
 }
 
 #answer{
   position: relative;
   top: 50px;
+}
+
+#answer2{
+  position: absolute;
+  top: 220px;
+  left: 190px;
 }
