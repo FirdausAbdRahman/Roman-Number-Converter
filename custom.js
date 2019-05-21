@@ -1,4 +1,7 @@
-function convertToRoman(num) {
+const input = document.getElementById("input1");
+const input2 = document.getElementById("input2");
+
+const convertToRoman = (num) =>{
   'use strict';
   let decimalValue = [ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 ];
   let romanNumeral = [ 'M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I' ];
@@ -18,7 +21,7 @@ function convertToRoman(num) {
   return romanized;
 }
 
-function convertToNum(romanInput) {
+const convertToNum = (romanInput) => {
   'use strict';
   let romans = {
       'I': 1,
@@ -39,7 +42,7 @@ function convertToNum(romanInput) {
       return accumulator + romans[currentValue];
     }
     // if previous numeral is greater or equal in value than current, add current value to accumulator - normal behaviour
-    if (romans[romArr[currentIndex - 1]] >= romans[currentValue]) {
+    else if (romans[romArr[currentIndex - 1]] >= romans[currentValue]) {
     return accumulator + romans[currentValue];
     } else {
     // otherwise previous numeral must be lower in value, so the subtraction rule must be implemented
@@ -54,11 +57,7 @@ function convertToNum(romanInput) {
 }
 
 
-let input = document.getElementById("input1");
-input.addEventListener("keyup", convertInput);
-
-
-function convertInput(){
+const convertInput = () =>{
 'use strict';
 
   let value = document.getElementById("input1").value;
@@ -77,10 +76,7 @@ function convertInput(){
 }
 
 
- let input2 = document.getElementById("input2");
- input2.addEventListener("keyup", convertInput2);
-
-function convertInput2(){
+const convertInput2 = () =>{
   'use strict';
     let value2 = document.getElementById("input2").value.toUpperCase();
     let answer2 = document.getElementById("answer2");
@@ -90,3 +86,6 @@ function convertInput2(){
       answer2.innerHTML= "";
     }
   }
+
+input.addEventListener("keyup", convertInput);
+input2.addEventListener("keyup", convertInput2);
