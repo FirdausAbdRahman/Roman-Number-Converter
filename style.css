@@ -34,24 +34,10 @@ h1{
   color: black;
 }
 
-.span1{
- position: relative;
- top: 5px;
-}
 
-.p2{
-  position: absolute;
-  top: 140px;
-  right: 13px;
-}
+.feature2{
+position: absolute;
+top: 130px;
+left: 90px;
 
-.span2{
-  position: absolute;
-  top: 200px;
-  left: 75px;
-  display:flex;
-}
-
-#answer2{
-  margin-top: 110px;
 }
