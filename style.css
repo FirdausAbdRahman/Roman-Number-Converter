@@ -1,11 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Quattrocento:400,700);
-
 body{
   margin: 0;
   padding: 0;
-  font-family: "Quattrocento", sans-serif;
+  font-family:sans-serif;
   font-weight: bold;
-  background: url(background.jpg);
+  background: radial-gradient(bisque, chocolate, black);
+  height: 100vh;
 }
 
 .container{
@@ -17,11 +16,13 @@ body{
   width: 365px;
   height: 250px;
   transform: translate(-50%, -50%);
-  background: burlywood;
+  background: url(theme.jpg);
+  background-size: cover;
+  font-weight: bold;
   text-align: center;
   border: 5px solid chocolate;
   border-style: outset;
-  box-shadow: 5px 10px grey;
+  box-shadow: 5px 10px black;
 }
 
 h1{
@@ -34,10 +35,18 @@ h1{
   color: black;
 }
 
+.feature1{
+  position: absolute;
+  top: 30px;
+  left: 90px;
+}
 
 .feature2{
 position: absolute;
-top: 130px;
+top: 150px;
 left: 90px;
+}
 
+input{
+border-color: chocolate;
 }
