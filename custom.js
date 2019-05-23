@@ -65,10 +65,13 @@ const convertInput = () =>{
   let answer = document.getElementById("answer1");
   if(convertToRoman(value)){
      answer.innerHTML= "Answer: " + convertToRoman(value);
+     answer.style = 'color: black';
   }else if(value === 0){
-    answer.innerHTML ="Romans have no concept of zero.";
+    answer.innerHTML ="No concept of zero";
+    answer.style = 'color: red';
   }else if(convertToRoman(value < 0)){
-    answer.innerHTML = "This doesn\'t work for negative numbers.";
+    answer.innerHTML = "No concept of negative numbers";
+    answer.style = 'color: red';
   }
   else{
     answer.innerHTML="";
