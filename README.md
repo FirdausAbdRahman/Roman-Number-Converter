@@ -1,13 +1,16 @@
 # A Fully-Functional Roman-Numeral Converter using Vanilla JavaScript
 
-It's my second project that I've developed through freeCodeCamp curriculum. I finally upgraded it to a fully-functional web app that 
-converts number into Roman numeral, and Roman numeral into number.
+It's my second project that I've developed through freeCodeCamp curriculum. I've upgraded this project to a fully-functional web app that 
+not only converts number into Roman numeral, and also vice versa.
 
-I've added 2 feature options (need to manually adjust the file to chose the option) :
+A brief introduction about roman numerals:
 
-	Option 1 => Press 'convert' button to convert the number to Roman, and vice versa
+1. Roman numerals are a numeric system that originated in Ancient Rome.
+2. Roman numerals have no concepts of negative numbers & zero.
 
-	Option 2 => Automatically convert the number to Roman numeral once you type the number, and vice versa.
+For more details, you can click on the title of this app. 
+
+
 
 credit: Cam Sexton on Codepen
 https://codepen.io/ctsexton/pen/QxBZdE?editors=0010
